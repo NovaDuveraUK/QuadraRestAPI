@@ -16,9 +16,3 @@ pip install aiohttp python-decouple asyncio
 1. Get contracts from `api/v1/contracts`
 2. Get your trading venues from `api/v1/venues`
 3. Start interacting with private endpoints by using your API keys
-
-### Authentication Process
-
-
-
-### Examples
