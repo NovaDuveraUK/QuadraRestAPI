@@ -1,0 +1,61 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="9">
+            <item index="0" class="java.lang.String" itemvalue="websocket" />
+            <item index="1" class="java.lang.String" itemvalue="websocket-client" />
+            <item index="2" class="java.lang.String" itemvalue="websockets" />
+            <item index="3" class="java.lang.String" itemvalue="decouple" />
+            <item index="4" class="java.lang.String" itemvalue="boto3" />
+            <item index="5" class="java.lang.String" itemvalue="asyncpg" />
+            <item index="6" class="java.lang.String" itemvalue="python-decouple" />
+            <item index="7" class="java.lang.String" itemvalue="aiohttp" />
+            <item index="8" class="java.lang.String" itemvalue="psycopg2-binary" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8Inspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="E501" />
+          <option value="E101" />
+          <option value="W191" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N801" />
+          <option value="N803" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="str.fetchPositions" />
+          <option value="str.fetchBalance" />
+          <option value="str.load_markets" />
+          <option value="str.fetch_my_trades" />
+          <option value="str.fetch_ohlcv" />
+          <option value="str.markets_by_id" />
+          <option value="tuple.carry" />
+          <option value="tuple.one_std_move" />
+          <option value="tuple.rolling_z" />
+          <option value="tuple.Index" />
+          <option value="tuple.Carry_SL" />
+          <option value="tuple.rolling_std" />
+          <option value="tuple.rolling_mean" />
+          <option value="tuple.Carry_TP" />
+          <option value="sqlalchemy.create_engine" />
+          <option value="sqlalchemy.pool.NullPool" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
