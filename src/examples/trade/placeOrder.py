@@ -7,15 +7,15 @@ import json
 base_url = 'https://dev-execution-api.quadra.trade'
 api_key = config('API_KEY')
 secret_key = config('SECRET_KEY')
-exchange = 'binance_spot'
+exchange = 'binance_usdm'
 
 
 example_order = {
-  "company_exchange_id": "8291f3e9-5b20-4973-b1c2-2f44bedb8c33",
-  "exchange_id": "binance_spot",
+  "company_exchange_id": "d7477890-2249-414e-898d-1034fc1a97f5",
+  "exchange_id": "binance_usdm",
   "exchange_format": 0,
   "data": {
-    "symbol": "XRP_USDT_SPOT",
+    "symbol": "XRP_USDT_PERP_USDM",
     "order_type": "limit",
     "side": "buy",
     "base_amount": 20,

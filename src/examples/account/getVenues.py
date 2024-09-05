@@ -3,7 +3,7 @@ from src.quadra.account import AccountRoutes
 from decouple import config
 
 
-base_url = 'https://dev-execution-api.quadra.trade'
+base_url = config('REST_API_URL')
 api_key = config('API_KEY')
 secret_key = config('SECRET_KEY')
 
@@ -17,6 +17,6 @@ async def get_venues():
     return data
 
 
-# Example main gutter script below
 if __name__ == '__main__':
     venues = asyncio.run(get_venues())
+    print(venues)

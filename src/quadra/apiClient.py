@@ -1,5 +1,4 @@
 import aiohttp
-import asyncio
 import hmac
 import hashlib
 import time
@@ -23,13 +22,11 @@ class ApiClient:
 
         message = f"{timestamp}{method}{endpoint_with_params}{body}"
         signature = hmac.new(self.secret_key.encode(), message.encode(), hashlib.sha256).hexdigest()
-        # print("message", message)
-        # print(signature)
         return timestamp, signature
 
     async def _request(self, method, endpoint, params=None, data=None):
         url = f"{self.base_url}{endpoint}"
-        body_string = '' if not data else json.dumps(data, separators=(',', ':'))  # separators=(',', ':') removes whitespaces
+        body_string = '' if not data else json.dumps(data, separators=(',', ':'))  # The separators=(',', ':') removes whitespaces
         timestamp, signature = self._generate_signature(method, endpoint, params, body_string)
 
         headers = {

@@ -7,7 +7,7 @@ from decouple import config
 base_url = 'https://dev-execution-api.quadra.trade'
 api_key = config('API_KEY')
 secret_key = config('SECRET_KEY')
-exchange = 'binance_spot'  # or comma seperated list
+exchange = 'binance_spot,binance_usdm'  # or comma seperated list
 
 
 async def get_contracts():
