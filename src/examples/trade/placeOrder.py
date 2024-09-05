@@ -1,17 +1,15 @@
 import asyncio
 from src.quadra.trade import TradeRoutes
 from decouple import config
-import json
 
-# base_url = 'http://localhost:3000'
-base_url = 'https://dev-execution-api.quadra.trade'
+base_url = config('REST_API_URL')
 api_key = config('API_KEY')
 secret_key = config('SECRET_KEY')
-exchange = 'binance_usdm'
 
+# Note symbol will be changing to 'market_quadra' in the future
 
 example_order = {
-  "company_exchange_id": "d7477890-2249-414e-898d-1034fc1a97f5",
+  "company_exchange_id": "1097f8ca-7819-41d7-8145-7b7e436d7c38",
   "exchange_id": "binance_usdm",
   "exchange_format": 0,
   "data": {
@@ -27,15 +25,13 @@ example_order = {
 
 
 async def place_order():
-    # Public Routes Class
+    # Trade Routes Class
     client = TradeRoutes(base_url, api_key, secret_key)
-    # Get contracts
-    contracts_response = await client.place_order(example_order)
-    print(contracts_response)
-    contracts_data = contracts_response['data']
-    return contracts_data
+    response = await client.place_order(example_order)
+    data = response['data']
+    return data
 
 
-# Example main gutter script below
 if __name__ == '__main__':
     order = asyncio.run(place_order())
+    print(order)

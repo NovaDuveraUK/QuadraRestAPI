@@ -3,13 +3,13 @@ from src.quadra.account import AccountRoutes
 from decouple import config
 import time
 
-
 base_url = config('REST_API_URL')
 api_key = config('API_KEY')
 secret_key = config('SECRET_KEY')
 company_exchange_id = config('COMPANY_EXCHANGE_ID')
 # 1 day in milliseconds
 one_day = 86400000
+
 
 async def get_balances_history():
     # Account Routes Class
