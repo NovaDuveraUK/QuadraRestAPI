@@ -9,7 +9,7 @@
 
 ## Installation
 ```bash
-pip install python-decouple aiohttp asyncio
+pip install python-decouple aiohttp asyncio pandas
 ```
 
 ## General Usage
