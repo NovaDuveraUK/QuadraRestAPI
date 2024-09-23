@@ -11,7 +11,7 @@ example_order = {
   "exchange_id": "binance_usdm",
   "exchange_format": 0,
   "data": {
-    "symbol": "XRP_USDT_PERP_USDM",
+    "market_quadra": "XRP_USDT_PERP_USDM",
     "order_id": "xxx",
   }
 }

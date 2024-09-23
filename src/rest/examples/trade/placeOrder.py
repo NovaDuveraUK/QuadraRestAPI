@@ -13,10 +13,10 @@ example_order = {
   "exchange_id": "binance_coinm",
   "exchange_format": 0,
   "data": {
-    "symbol": "DOT_USD_PERP_COINM",
+    "market_quadra": "DOT_USD_PERP_COINM",
     "order_type": "limit",
     "side": "buy",
-    "quote_amount": 20,
+    "quote_notional": 20,
     "price": 0.2,
     "time_in_force": "GTC",
     "post_only": True

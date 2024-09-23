@@ -14,10 +14,10 @@ example_order = {
     "exchange_format": 0,
     "data": {
         "order_id": "xxx",
-        "new_symbol": "XRP_USDT_SPOT",
+        "new_market_quadra": "XRP_USDT_SPOT",
         "new_order_type": "limit",
         "new_side": "buy",
-        "new_base_amount": 40,
+        "new_base_notional": 40,
         "new_price": 0.42,
         "new_time_in_force": "GTC",
         "new_post_only": True

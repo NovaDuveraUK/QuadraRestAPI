@@ -5,16 +5,16 @@ from src.ws.client.wsClient import WsClient
 base_url = config('WS_API_URL')
 api_key = config('API_KEY')
 secret_key = config('SECRET_KEY')
-company_exchange_id = config('COMPANY_EXCHANGE_ID')
 
 
-async def listen_algo_orders():
-    # Listen algo orders payload
+async def listen_prices():
+    # Listen prices payload
     payload = {
         'op': 'subscribe',
-        'topic_id': 'algo_orders',
+        'topic_id': 'prices',
         'params': {
-            'company_exchange_id': company_exchange_id
+            'exchange_id': 'binance_spot',
+            'market_quadra': 'XRP_USDT_SPOT',
         }
     }
 
@@ -23,4 +23,4 @@ async def listen_algo_orders():
 
 
 if __name__ == '__main__':
-    asyncio.run(listen_algo_orders())
+    asyncio.run(listen_prices())
