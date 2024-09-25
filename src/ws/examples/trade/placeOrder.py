@@ -2,7 +2,7 @@ import asyncio
 from decouple import config
 from src.ws.client.wsClient import WsClient
 
-base_url = config('WS_API_URL')
+base_url = config('WS_API_URL_LOCAL')
 api_key = config('API_KEY')
 secret_key = config('SECRET_KEY')
 company_exchange_id = config('COMPANY_EXCHANGE_ID')
@@ -21,8 +21,8 @@ async def place_order():
         "side": "sell",
         "base_notional": 25,
         # "quote_notional": 100,
-        "price": 1,
-        "time_in_force": "GTC",
+        "price": 0.58,
+        "time_in_force": "IOC",
         # "client_order_id": "client_order_id_1234",
         # "reduce_only": false,
         # "isolated": false,

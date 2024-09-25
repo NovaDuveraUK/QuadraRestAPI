@@ -8,11 +8,11 @@ secret_key = config('SECRET_KEY')
 company_exchange_id = config('COMPANY_EXCHANGE_ID')
 
 
-async def listen_algo_trades():
-    # Listen algo trades payload
+async def listen_child_trades():
+    # Listen child trades payload
     payload = {
         'op': 'subscribe',
-        'topic_id': 'algo_trades',
+        'topic_id': 'child_trades',
         'params': {
             'company_exchange_id': company_exchange_id
         }
@@ -23,4 +23,4 @@ async def listen_algo_trades():
 
 
 if __name__ == '__main__':
-    asyncio.run(listen_algo_trades())
+    asyncio.run(listen_child_trades())

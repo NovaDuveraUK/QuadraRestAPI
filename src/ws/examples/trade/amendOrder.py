@@ -24,7 +24,7 @@ async def amend_order():
         # "new_quote_notional": 100,
         "new_price": 0.9,
         "new_time_in_force": "GTC",
-        # "client_order_id": "client_order_id_1234",
+        "new_client_order_id": "client_order_id_1234",
         # "reduce_only": false,
         # "isolated": false,
         # "position_mode": "ONE_WAY",

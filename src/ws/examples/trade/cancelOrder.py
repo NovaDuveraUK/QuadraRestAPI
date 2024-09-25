@@ -17,7 +17,7 @@ async def cancel_order():
       "exchange_id": "binance_spot",
       "data": {
         "market_quadra": "XRP_USDT_SPOT",
-        "order_id": "6633570074"
+        "order_id": "6634198389"
       }
     }
 

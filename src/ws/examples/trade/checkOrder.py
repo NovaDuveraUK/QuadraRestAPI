@@ -17,7 +17,7 @@ async def check_order():
       "exchange_id": "binance_spot",
       "data": {
         "market_quadra": "XRP_USDT_SPOT",
-        "order_id": "6633430591"
+        "order_id": "6634438856"
       }
     }
 
