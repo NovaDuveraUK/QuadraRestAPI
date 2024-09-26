@@ -12,9 +12,9 @@ async def listen_algo_trades():
     # Listen algo trades payload
     payload = {
         'op': 'subscribe',
-        'topic_id': 'algo_trades',
+        'topic_id': 'child_trades',
         'params': {
-            'company_exchange_id': company_exchange_id
+            'company_exchange_id': '*'
         }
     }
 

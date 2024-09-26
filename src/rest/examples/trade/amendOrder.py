@@ -17,7 +17,8 @@ example_order = {
         "new_market_quadra": "XRP_USDT_SPOT",
         "new_order_type": "limit",
         "new_side": "buy",
-        "new_base_notional": 40,
+        "new_qty": 40,
+        "new_qty_ccy": "XRP",
         "new_price": 0.42,
         "new_time_in_force": "GTC",
         "new_post_only": True
