@@ -16,8 +16,12 @@ example_order = {
     "market_quadra": "DOT_USD_PERP_COINM",
     "order_type": "limit",
     "side": "buy",
+<<<<<<< HEAD
     "qty": 20,
     "qty_ccy": "USD",
+=======
+    "quote_notional": 20,
+>>>>>>> 34970be815b0865a82da9c3712c9800515e4b9df
     "price": 0.2,
     "time_in_force": "GTC",
     "post_only": True

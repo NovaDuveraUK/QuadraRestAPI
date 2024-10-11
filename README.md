@@ -14,8 +14,11 @@ pip install python-decouple aiohttp asyncio pandas websockets
 
 ## General Usage
 
+<<<<<<< HEAD
 ### Setup
 1. Set the BASE_URL, and your API Keys in your .env file.
+=======
+>>>>>>> 34970be815b0865a82da9c3712c9800515e4b9df
 ### Public Endpoints
 1. Get supported venues from `src/examples/public/getVenues.py`.
 2. Get supported contracts from `src/examples/public/getContracts.py`.

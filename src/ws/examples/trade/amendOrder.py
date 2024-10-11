@@ -16,6 +16,7 @@ async def amend_order():
       "company_exchange_id": company_exchange_id,
       "exchange_id": "binance_spot",
       "data": {
+<<<<<<< HEAD
         "order_id": "6637358440",
         "new_market_quadra": "XRP_USDT_SPOT",
         "new_order_type": "limit",
@@ -25,6 +26,17 @@ async def amend_order():
         "new_price": 0.9,
         "new_time_in_force": "GTC",
         # "client_order_id": "client_order_id_1234",
+=======
+        "order_id": "6633425015",
+        "new_market_quadra": "XRP_USDT_SPOT",
+        "new_order_type": "limit",
+        "new_side": "sell",
+        "new_base_notional": 30,
+        # "new_quote_notional": 100,
+        "new_price": 0.9,
+        "new_time_in_force": "GTC",
+        "new_client_order_id": "client_order_id_1234",
+>>>>>>> 34970be815b0865a82da9c3712c9800515e4b9df
         # "reduce_only": false,
         # "isolated": false,
         # "position_mode": "ONE_WAY",
